@@ -1,0 +1,40 @@
+BASE = 'https://archive-api.open-meteo.com/v1/archive'
+params = f'?latitude=30.2&longitude=-97.7'
+params += '&start_date=1940-01-01&end_date=2024-12-31'
+params += '&daily=temperature_2m_max&timezone=auto'
+url = BASE + params
+print(url)
+import urllib.request, json
+try:
+    with urllib.request.urlopen(url) as r:
+        raw = json.loads(r.read().decode())
+except Exception as e:
+    print(f'API call failed: {e}')
+print(type(raw))
+print(raw.keys())
+print(raw['daily'].keys())
+import numpy as np
+print(type(np.nan))
+print(np.nan == np.nan)
+import pandas as pd
+dates = raw['daily']['time']
+print(dates[:3])
+temps = raw['daily']['temperature_2m_max']
+print(temps[:3])
+df = pd.DataFrame({'date': dates, 'temp_max': temps})
+print(df.head())
+print(df.dtypes)
+print(df.iloc[0])
+print(df['temp_max'].head())
+sentinel_rows = df[df['temp_max'] == -9999]
+print(sentinel_rows.shape)
+df['temp_max'] = df['temp_max'].replace(-9999, np.nan)
+print(df[df['temp_max'] == -9999].shape)
+print(f'Rows: {df.shape[0]}')
+print(f'Missing values: {df["temp_max"].isna().sum()}')
+print(f'Min temp: {df["temp_max"].min():.1f} C')
+print(f'Max temp: {df["temp_max"].max():.1f} C')
+max_f = df['temp_max'].max() * 9/5 + 32
+print(f'Max temp in F: {max_f:.1f}')
+df.to_csv('climate_austin.csv', index=False)
+print(df.shape)
