@@ -146,8 +146,6 @@ By completing these notebooks, you will be able to:
 ## 👤 Author
 
 **Rudra**
-Data Science Learning Journey
-
 GitHub: https://github.com/s326327
 
 ---
