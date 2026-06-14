@@ -1,4 +1,4 @@
-# 📊 Days 1–5 Data Science
+# Days 1–5 Data Science
 
 A beginner-friendly Data Science learning repository that introduces core statistical concepts through hands-on Jupyter notebooks.
 
@@ -6,10 +6,8 @@ This repository is designed to build a strong foundation in data analysis by exp
 
 ---
 
-## 🚀 Learning Journey
-
 ### Day 1: Data is Messy
-📄 `Lesson1_ Data is Messy.ipynb`
+`Lesson1_ Data is Messy.ipynb`
 
 Learn about:
 - Real-world data quality issues
@@ -20,7 +18,7 @@ Learn about:
 ---
 
 ### Day 2: Three Ways to Describe Typical
-📄 `Lesson2_ Three Ways to Describe Typical.ipynb`
+`Lesson2_ Three Ways to Describe Typical.ipynb`
 
 Learn about:
 - Mean
@@ -32,7 +30,7 @@ Learn about:
 ---
 
 ### Day 3: How Spread Out is the Data?
-📄 `Lesson3_ How Spread Out is the Data.ipynb`
+`Lesson3_ How Spread Out is the Data.ipynb`
 
 Learn about:
 - Range
@@ -44,7 +42,7 @@ Learn about:
 ---
 
 ### Day 4: What Does the Shape of the Data Say?
-📄 `Lesson4_ What Does the Shape of the Data Say_.ipynb`
+`Lesson4_ What Does the Shape of the Data Say_.ipynb`
 
 Learn about:
 - Data distributions
@@ -55,7 +53,7 @@ Learn about:
 ---
 
 ### Day 5: What Is Normal and Surprising?
-📄 `Lesson5_ What Is Normal and Surprising_.ipynb`
+`Lesson5_ What Is Normal and Surprising_.ipynb`
 
 Learn about:
 - Normal distribution
@@ -77,7 +75,7 @@ Learn about:
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```text
 Days-1---5-Data-Science/
@@ -91,7 +89,7 @@ Days-1---5-Data-Science/
 
 ---
 
-## ▶️ Getting Started
+## Getting Started
 
 ### Clone the Repository
 
@@ -121,7 +119,7 @@ Open any notebook and run the cells to follow along with the lessons.
 
 ---
 
-## 🎯 Learning Outcomes
+## Learning Outcomes
 
 By completing these notebooks, you will be able to:
 
@@ -134,7 +132,7 @@ By completing these notebooks, you will be able to:
 
 ---
 
-## 📚 Ideal For
+## Ideal For
 
 - Beginners in Data Science
 - Students learning Statistics
@@ -143,13 +141,13 @@ By completing these notebooks, you will be able to:
 
 ---
 
-## 👤 Author
+## Author
 
 **Rudra**
 GitHub: https://github.com/s326327
 
 ---
 
-## ⭐ Support
+## Support
 
 If you found this repository helpful, consider giving it a star ⭐ to support the project and help others discover it.
